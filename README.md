@@ -2,21 +2,19 @@
 
 ## Server
 
-Add the following to your MCP server configuration:
+Install this MCP server by adding the following JSON code to your JSON config file
 
-"Server": {
-  "command": "uvx",
-  "args": [
-    "--directory",
-    "/Users/ac/Desktop/mcp-build-chess/",
-    "run",
-    "chess"
-  ]
+```json
+
+"mcpServers": {
+    "Server": {
+    "command": "uvx",
+    "args": [
+        "--from",
+        "git+https://github.com/hebemewe/chess-map.git",
+        "run",
+        "chess"
+        ]
+    }
 },
-
-To run the server locally:
-
-```bash
-uvx --directory /Users/ac/Desktop/mcp-build-chess/ run chess
-```
 
